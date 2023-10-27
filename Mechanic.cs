@@ -5,6 +5,6 @@ class Mechanic : Worker
 
     public override void Work()
     {
-        Console.WriteLine("cling clang");
+        Console.WriteLine($"{Name} is working, cling clang");
     }
 }

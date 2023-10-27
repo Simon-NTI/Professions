@@ -1,11 +1,11 @@
 class City 
 {
-    public string Country { get; private set; }
-    public string Name { get; private set; }
+public string Country { get; private set; }
+public string Name { get; private set; }
 
-    public City(string country, string name)
+    public City(string Country, string Name)
     {
-        Country = country;
-        Name = name;
+        this.Country = Country;
+        this.Name = Name;
     }
 }

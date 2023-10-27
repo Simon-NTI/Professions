@@ -19,5 +19,24 @@ class Program
         mechanic2.GoToWork();
 
         mechanic2.Work();
+
+        mechanic1.possessions.Add("Wrench");
+        mechanic1.WriteAllPossessions();
+
+        mechanic2.possessions.AddRange(new List<string>
+        {
+            "Wrench",
+            "Napkin",
+            "Newspaper"
+
+        });
+        mechanic2.WriteAllPossessions();
+
+        House house1 = new("Venezuela", "Caracas", "Red");
+
+        house1.residents.Add(painter1);
+        house1.residents.Add(mechanic2);
+
+        house1.WriteAllResidents();
     }
 }

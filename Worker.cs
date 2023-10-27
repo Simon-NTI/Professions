@@ -1,8 +1,7 @@
 abstract class Worker {
 public City Hometown { get; set; }
 public string Name { get; set; }
-
-    public string[] possesions;
+    public List<string> possessions = new();
     
     public Worker(City Hometown, string Name)
     {
@@ -15,5 +14,14 @@ public string Name { get; set; }
         Console.WriteLine($"{Name} went to {Hometown.Name} to begin work");
     }
     public abstract void Work();
+
+    public void WriteAllPossessions()
+    {
+        Console.WriteLine($"{Name} owns the following items:");
+        foreach(string possession in possessions)
+        {
+            Console.WriteLine(" - " + possession);
+        }
+    }
     
 }

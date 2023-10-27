@@ -5,6 +5,6 @@ class Painter : Worker {
 
     public override void Work()
     {
-        Console.WriteLine("fwoosh");
+        Console.WriteLine($"{Name} is working, fwoosh");
     }
 }
